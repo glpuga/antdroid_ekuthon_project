@@ -138,8 +138,8 @@ Mat ImageConverter::trackBall(Mat src, const bool is_red)
     if(circles.size() > 0)
     {
         Vec3i c = circles[0];
-        circle( src, Point(c[0], c[1]), c[2], Scalar(175,255,255), 3, CV_AA);
-        circle( src, Point(c[0], c[1]), 2, Scalar(175,255,255), 3, CV_AA);
+        circle( src, Point(c[0], c[1]), c[2], Scalar(175,255,255), 3, cv::LINE_AA);
+        circle( src, Point(c[0], c[1]), 2, Scalar(175,255,255), 3, cv::LINE_AA);
         
         if(_is_test)
         {
